@@ -1,0 +1,173 @@
+.header-container {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    background-color: blue;
+}
+
+.header-container a {
+    color: white;
+}
+
+/* .header-container,
+.footer-container a {
+    color: white;
+} */
+
+.header-center {
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+
+.menu {
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+
+.footer-container {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    /* background-color: black; */
+    color: 808080;
+}
+
+.footer-container li {
+    list-style-type: none;
+}
+
+.article-menu {
+    background-color: grey;
+}
+
+.header-center,
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right-container>div {
+    margin: 10px;
+}
+
+.left-container>div {
+    margin: 20px;
+}
+
+
+.header-container {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    background-color: blue;
+}
+
+.header-container a {
+    color: white;
+}
+
+.header-center {
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+
+.menu {
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+
+.footer-h4 {
+    color: #333366;
+    font-size: 24px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.footer-container a {
+    color: #808080;
+}
+
+.article-menu {
+    background-color: grey;
+}
+
+.header-center,
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-container .left-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container .right-container {
+    display: flex;
+    margin: 10px;
+}
+
+/* стилизация меню home product... */
+
+.block-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightgray;
+}
+
+.left-block-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+
+.left-block-menu a {
+    padding: 20px;
+    display: inline-block;
+}
+
+.right-block-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#search {
+    margin-right: 20px;
+    padding: 10px 24px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.image-menu {
+    display: flex;
+    margin: 40px;
+}
+
+.image {
+    width: 400px;
+    height: 200px;
+    border: 1px solid grey;
+    margin: 10px;
+    background: lightsteelblue;
+}

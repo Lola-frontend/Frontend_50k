@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 17</title>
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--  
+        Абсолютные пути:
+        Чтобы войти в ту или иную папку необходимо использовать /
+        Чтобы выйти из папки ..
+        Чтобы выйти и зайти выглядит: ../ 
+    -->
+
+<body>
+    <header>
+        <!-- Верхнее меню -->
+        <div class="verhnee-menu">
+            <div class="container">
+                <!-- Left side -->
+                <div class="left">
+                    <ul class="ul_li b-r">
+                        <li><i class="fa-solid fa-bullhorn"></i>SMS default welcome!</li>
+
+                        <li>
+                            <span class="icon_msg">
+                                <i class="fa-solid fa-gift"></i>
+                                <span class="msg">
+                                    2
+                                </span>
+                            </span>
+
+                            <span>Gift vouchers</span>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right side -->
+                <div class="right">
+                    <ul class="ul_li b-r">
+                        <li><i class="fa-solid fa-language"></i>Language: ENG</li>
+                        <li><i class="fa-solid fa-money-check-dollar"></i>Currency: USD</li>
+                        <li>Sign id/Registr</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- центральное меню -->
+        <div class="center-menu">
+            <div class="container">
+                <ul class="ul_li">
+                    <li>
+                        <img src="miu_logo.PNG" alt="logo">
+                    </li>
+                    <li>
+                        <div class="left">
+                            <span class="seryi_krug">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </span>
+                        </div>
+                        <div class="right m-l-10">
+                            <p>Mon-Sat 8h00-18h00</p>
+                            <p> Sunday <span class="red">CLOSED</span> </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="left">
+                            <span class="seryi_krug">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="right m-l-10">
+                            <p>Every week sales!</p>
+                            <p>Discount <span class="yellow">up 50% off</span> </p>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="left">
+                            <span class="seryi_krug">
+                                <i class="fa-solid fa-phone"></i></i>
+                            </span>
+                        </div>
+                        <div class="right m-l-10">
+                            <p>Have a Questions?</p>
+                            <p>Call: <span class="blue">1900-819898</span> </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Нижнее меню -->
+        <div class="nijnee_menu">
+            <div class="container">
+                <div class="left">
+                    <ul class="hover_menu ul_li">
+                        <li>
+                            <a href="#">Home</a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">Sale</a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">Blogs</a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="right">
+                    <ul class="ul_li">
+                        <li><label for="search"></label>
+                            <input type="search" name="search" id="search" placeholder="Search...">
+                        </li>
+                        <li>
+                            <div class="left">
+                                <span class="yellow_krug">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </span>
+                            </div>
+                            <div class="right m-l-10">
+                                <p>My Cart.</p>
+                                <p> 01 <span class="grey">$150.00</span> </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- <span>-контейнер сайта</span> -->
+    <main>
+        <div class="container">
+            <section id="product">
+                <div class="block_title">
+                    <div class="left">
+                        <h1>Featured</h1>
+                    </div>
+                    <div class="right">
+                        <span>View All Products <i class="fa-solid fa-circle-chevron-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="body_block">
+
+                    <div class="list_product">
+
+                        <div class="product">
+                            <div class="img">
+                                <div class="tooltip bg_orange">
+                                    <span>New</span>
+                                </div>
+                                <img src="img/product/product1/img1.jpg" alt="img1">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">Заголовок</p>
+                                        <p>Описание описание описание вот <span class="yellow">это</span> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="body-product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 Review(s)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <div class="tooltip bg_green">
+                                    <span>New</span>
+                                </div>
+                                <img src="img/product/product1/img1.jpg" alt="img1">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">Заголовок</p>
+                                        <p>Описание описание описание вот <span class="yellow">это</span> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="body-product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 Review(s)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <div class="tooltip bg_blue">
+                                    <span>New</span>
+                                </div>
+                                <img src="img/product/product1/img1.jpg" alt="img1">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">Заголовок</p>
+                                        <p>Описание описание описание вот <span class="yellow">это</span> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="body-product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 Review(s)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <div class="tooltip bg_red">
+                                    <span>New</span>
+                                </div>
+                                <img src="img/product/product1/img1.jpg" alt="img1">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">Заголовок</p>
+                                        <p>Описание описание описание вот <span class="yellow">это</span> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="body-product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 Review(s)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="img">
+                                <div class="tooltip bg_orange">
+                                    <span>New</span>
+                                </div>
+                                <img src="img/product/product1/img1.jpg" alt="img1">
+
+                                <div class="desc_img">
+                                    <div class="desc">
+                                        <p class="ttl">Заголовок</p>
+                                        <p>Описание описание описание вот <span class="yellow">это</span> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="body-product">
+                                <p class="ttl">Animal Print Sweatshirt</p>
+                                <div class="block_stars">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <span>6 Review(s)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>$36</span>
+                                    <del>$42</del>
+                                </div>
+
+                                <div class="btns dnone">
+                                    <ul class="ul_li">
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="seryi_krug">
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+            </section>
+            <section id="banner">
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- <span>-подвал сайта </span> -->
+        <!-- left side  footer-->
+        <div>
+            <a href="#"><img src="" alt="logo"></a>
+            <p>Text</p>
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">Telephone +84 988 922 085</a></li>
+                        <li><a href="#">Email:</a></li>
+                        <li><a href="#">8:00 - 19:00, Monday - Saturday, Sunday - closed</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <h4>Information</h4>
+                        <li><a href="#"></a>About us</li>
+                        <li><a href="#"></a>Shipping & Returns</li>
+                        <li><a href="#"></a>Privacy Notice</li>
+                        <li><a href="#"></a>Conditions of Use</li>
+                        <li><a href="#"></a>RSS</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <h4>Service</h4>
+                        <li><a href="#">Online support</a></li>
+                        <li><a href="#">Help & FAQs</a></li>
+                        <li><a href="#">Call Center</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Custom link</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <!-- right side footer -->
+                    <ul>
+                        <h4>Instagram</h4>
+                        <li><a href="#"><img src="" alt="image1"></a></li>
+                        <li><a href="#"><img src="" alt="image2"></a></li>
+                        <li><a href="#"><img src="" alt="image3"></a></li>
+                        <li><a href="#"><img src="" alt="image4"></a></li>
+                    </ul>
+                </div>
+
+    </footer>
+
+</body>
+
+</html>

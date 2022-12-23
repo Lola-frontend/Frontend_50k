@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+    <form action="">
+        <p>
+            <label for="fname">Имя:</label>
+            <input type="text" id="fname" name="fname" maxlength="20" placeholder="Введите имя">
+        </p>
+
+        <p>
+            <label for="lname">Фамилия:</label>
+            <input type="text" id="lname" name="lname" maxlength="40" placeholder="Введите фамилию">
+
+        </p>
+
+        <label for="man">Мужчина</label>
+        <input type="radio" name="man" id="man" value="Man" checked>
+        <label for="woman">Женщина</label>
+        <input type="radio" name="woman" id="woman" value="woman">
+
+        <p>О себе:</p>
+        <input type="checkbox" name="less18" id="less18" value="less18">
+        <label for="less18">Меньше 18</label><br>
+        <input type="checkbox" name="till35" id="till35" value="till35">
+        <label for="till35">От 18 до 35</label><br>
+        <input type="checkbox" name="more35" id="more35" value="more35">
+        <label for="more35">Больше 35</label><br>
+        <input type="checkbox" name="married" id="married" value="married">
+        <label for="married">Женат/-а</label><br>
+        <input type="checkbox" name="cat" id="cat" value="cat">
+        <label for="cat">Есть кошка</label><br><br>
+
+        <input type="submit" value="Отправить">
+
+    </form>
+
+</body>
+
+</html>

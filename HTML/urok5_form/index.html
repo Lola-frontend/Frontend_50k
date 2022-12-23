@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="handler.php">
+        <h2>Создание форм</h2>
+        <p>
+            <input type="text" name="a">
+            <input type="submit">
+        </p>
+        <p>
+            <input type="text" name="b">
+            <input type="submit">
+        </p>
+        <p>
+        <h2>Отправка данных формы</h2>
+        <input name="login">
+        <input type="password" name="pass">
+        <input type="submit">
+        </p>
+
+
+    </form>
+
+    <h2>Отправка формы по почте</h2>
+
+    <form action="mailto:lola-n@mail.ru" enctype="text/plain">
+        <p>
+            <input type="text" name="a">
+            <input type="submit">
+        </p>
+
+    </form>
+
+    <h2>Использование фрейма</h2>
+
+    <p>
+        <iframe name="area" width="500" height="200"></iframe>
+    </p>
+    <form action="handler.php" target="area"></form>
+    <p>
+        <input name="text" placeholder="Enter text">
+    </p>
+    <p><input type="submit" value="Send"></p>
+
+    <h2>Отправка формы</h2>
+
+    <form>
+        <p><input placeholder="Ваше имя" name="user"></p>
+        <p><input type="submit" value="Отправить" formaction="handler.php" formmethod="post"></p>
+    </form>
+
+    <!-- Текстовое поле -->
+    <form action="">
+        <h2>Текстовое поле</h2>
+        <p><strong>What is your name?</strong></p>
+        <p><input name="name" maxlength="25" size="40" value="Mark"></p>
+        <!-- maxlength=максимальное число символов, value=начальный текст, size=ширина текстового поля -->
+    </form>
+
+    <!-- Элемент <datalist> позволяет создать список подсказок, который появляется при наборе текста. -->
+    <form>
+        <h2>Cписок подсказок</h2>
+        <p><strong>Введите ваш город</strong></p>
+        <p><input name="city" list="city"></p>
+    </form>
+    <datalist id="city">
+        <option>Волгоград</option>
+        <option>Воронеж</option>
+        <option>Екатеринбург</option>
+        <option>Казань</option>
+        <option>Красноярск</option>
+        <option>Москва</option>
+        <option>Нижний Новгород</option>
+        <option>Новосибирск</option>
+        <option>Омск</option>
+        <option>Пермь</option>
+        <option>Ростов-на-Дону</option>
+        <option>Самара</option>
+        <option>Санкт-Петербург</option>
+        <option>Уфа</option>
+        <option>Челябинск</option>
+    </datalist>
+
+
+    <!-- Поле для пароля  -->
+
+    <form action="handler.php">
+        <h2>Поле для пароля</h2>
+        <p><strong>Логин:</strong>
+            <input maxlength="25" size="40" name="login">
+        </p>
+        <p><strong>Пароль:</strong>
+            <input type="password" maxlength="25" size="40" name="password">
+        </p>
+        <p><input type="submit" value="Войти"></p>
+    </form>
+
+    <h2>Связывание формы с полями</h2>
+
+    <form id="auth" action="handler.php" method="post"></form>
+    <p>...</p>
+    <p><input name="login" form="auth">
+        <input type="password" name="pass" form="auth">
+    </p>
+    <p><input type="submit" form="auth"></p>
+
+</body>
+
+</html>

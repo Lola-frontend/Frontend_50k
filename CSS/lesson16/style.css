@@ -1,0 +1,219 @@
+/* базовые настройки страницы */
+
+/*            *-означает обращение ко всем элементам сайта             */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+p {
+    margin: 0;
+    /* убирает все отступы браузера */
+}
+
+/* конец базовых настройки страницы */
+
+
+
+/* Универсальные стили */
+
+/* , - Это означает дополнительное обращение к тому или иному элементу.
+                Это перечисление подключенных class'ов */
+.left,
+.ul_li>li {
+    float: left;
+    /* > - означает что обращение будет происходить для родительских элементов ( к первому li, к первому ярусу li ) */
+    /* float - это обтекание. То есть выравнивание.
+            выравнивание: куда
+            выравнивание: в левую сторону = float: left
+            выравнивание: в правую сторону = float: right  */
+}
+
+.right {
+    float: right;
+}
+
+.ul_li {
+    list-style: none;
+    /* убрать точки */
+    display: inline;
+    /* появляется высота */
+    padding: 0;
+    margin: 0;
+    /* сброс */
+}
+
+.ul_li li {
+    padding: 10px 15px;
+}
+
+.b-r li {
+    border-right: 1px solid #838282;
+}
+
+.b-r li:last-child {
+    border-right: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    /* margin - это внешний отступ
+                    также margin является выравниванием 
+                    margin: 0 auto - ноль отсупов со всех сторон и это значит выровнить по центру*/
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: #efbb12;
+}
+
+.blue {
+    color: #2b7ec2;
+}
+
+.grey {
+    color: grey;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+
+.dropdown_menu li {
+    list-style-type: none;
+}
+
+
+.hover_menu li:hover .dropdown_menu {
+    display: block;
+}
+
+.hover_menu a:hover {
+    background-color: #7cd0f5;
+    border-radius: 40px;
+    padding: 10px 20px;
+    line-height: 20px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* конец универсальных стилей  */
+
+
+/* стили для страницы */
+/* урок 14 */
+/* Верхнее меню */
+.verhnee-menu {
+    background-color: #dfdada;
+    display: inline-block;
+    width: 100%;
+}
+
+/* display: inline-block; width: 100%; чтобы отделить нижние части от верхнего блока */
+
+.verhnee-menu .ul_li i {
+    margin-right: 10px;
+}
+
+.icon_msg {
+    position: relative;
+}
+
+.msg {
+    position: absolute;
+    top: -7px;
+    right: 8px;
+    background: red;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    color: white;
+    font-size: 9px;
+    line-height: 1.5;
+    border-radius: 13px;
+}
+
+/* центральное меню */
+.center-menu ul {
+    display: flex;
+    /* 
+        display - это блок отображения. В озможные вариации отображения.
+        :flex - бытьь адаптивным
+
+        при использовании display:flex; необходимо использовать: 
+        justify-content: space-between; выравнивание по горизонтали
+        align-items: center; выравнивание по вертикали
+    */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seryi_krug {
+    background: #dbd7d7;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 50%;
+    color: #4b4b67;
+}
+
+
+.center-menu .right>p:first-child {
+    font-weight: bold;
+    color: #4c4b6b;
+}
+
+.center-menu .right>p {
+    color: #938d8d;
+}
+
+/* нижнее меню */
+.nijnee_menu {
+    display: inline-block;
+    width: 100%;
+    background: #dfdada;
+    position: relative;
+}
+
+.yellow_krug {
+    background: #f5bd2c;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 50%;
+    color: #4b4b67;
+}
+
+#search {
+    border-radius: 30px;
+    border-style: none;
+    padding: 10px;
+    width: 300px;
+}
+
+/* конец стилей для страницы */

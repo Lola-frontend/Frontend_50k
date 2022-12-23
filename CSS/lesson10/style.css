@@ -1,0 +1,38 @@
+.header-container {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    background-color: blue;
+}
+
+.header-container a {
+    color: white;
+}
+
+.header-center {
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+
+.menu {
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+
+.footer-container {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.footer-container a {
+    color: #fff;
+}
+
+.article-menu {
+    background-color: grey;
+}

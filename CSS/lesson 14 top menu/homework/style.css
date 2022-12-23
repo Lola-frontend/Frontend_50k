@@ -1,0 +1,119 @@
+/* базовые настройки страницы */
+
+/*            *-означает обращение ко всем элементам сайта             */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* убирает все отступы браузера */
+}
+
+/* конец базовых настройки страницы */
+
+
+
+/* Универсальные стили */
+
+/* , - Это означает дополнительное обращение к тому или иному элементу.
+                Это перечисление подключенных class'ов */
+.left,
+.ul_li li {
+    float: left;
+    /* float - это обтекание. То есть выравнивание.
+            выравнивание: куда
+            выравнивание: в левую сторону = float: left
+            выравнивание: в правую сторону = float: right  */
+}
+
+.right {
+    float: right;
+}
+
+.ul_li {
+    list-style: none;
+    /* убрать точки */
+    display: inline;
+    /* появляется высота */
+    padding: 0;
+    margin: 0;
+    /* сброс */
+}
+
+.ul_li li {
+    padding: 10px 15px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    /* margin - это внешний отступ
+                    также margin является выравниванием 
+                    margin: 0 auto - ноль отсупов со всех сторон и это значит выровнить по центру*/
+}
+
+/* конец универсальных стилей  */
+
+
+/* стили для страницы */
+/* урок 14 */
+.verhnee-menu {
+    background-color: #f7f7f7;
+    display: inline-block;
+    width: 100%;
+}
+
+/* display: inline-block; width: 100%; чтобы отделить нижние части от верхнего блока */
+
+
+.header-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.down-menu {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    font-size: 18px;
+}
+
+.central-menu {
+    margin: 30px;
+
+}
+
+.down-menu :last-child :first-child {
+    margin: 0;
+}
+
+img {
+    width: 180px;
+}
+
+/* конец стилей для страницы */
+
+#search {
+    border-radius: 30px;
+    border-style: none;
+    padding: 15px;
+    margin: 10px 20px 0;
+    /* margin-top: 10px;
+    margin-right: 20px; */
+    width: 300px;
+}
+
+/* .search :last-child {
+    height: 20px;
+} */
+
+a {
+    text-decoration: none;
+}

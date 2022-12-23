@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    color: #828282;
+    margin: 20px 0;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    font-size: 17.3392px;
+    color: #070707;
+    border-top: 1px solid #828282;
+    max-width: 940px
+}
+
+.left-profile {
+    font-size: 25px;
+    color: #070707;
+    margin-top: 40px;
+    width: 100px
+}
+
+.center-profile {
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    margin-top: 94px;
+    width: 200px
+}
+
+.right-profile {
+    margin-top: 69px;
+    margin-right: -50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #828282;
+    transform: rotate(-90deg)
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center
+}
+
+.aboutme {
+    margin-top: 50px;
+    padding: 30px;
+    height: 506px;
+    background: #F6F6F6;
+    text-align: center;
+}
+
+.aboutme {
+    font-size: 34px;
+    color: #070707;
+}
+
+.aboutme p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.skills {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #070707;
+    text-align: center;
+}
+
+.skills-img {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    color: #828282;
+}
+
+.sk-img figcaption {
+    margin-top: 15px;
+}
+
+.skills h1 {
+    font-size: 34px;
+    color: #070707;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+    background: #F6F6F6;
+    width: 1440;
+}
+
+.pr-note {
+    padding: 30px;
+}
+
+.contacts h1 {
+    font-size: 34px;
+    color: #070707;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #070707;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.con-icon {
+    margin: auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+
+}
+
+.contacts {
+    margin-top: 120px;
+    font-size: 14px;
+    color: #828282;
+    text-align: center;
+
+}
