@@ -17,10 +17,10 @@
 
     // Принцип получения данных следующий:
         // Получить данные можно с помощью:
-        // .class 
-        // #id
-        // attribute
-        // tag
+        // .class - document.getElementsByClassName(name)
+        // #id - document.getElementById(id)
+        // attribute - document.getElementById(id).attribute = new value
+        // tag - document.getElementsByTagName(name)
 
         // .class - document.getElementsByClassName - Внутри документа получить элементы по названию класса
         //      document - вкладка 
@@ -39,3 +39,12 @@
 
     let ttl = document.getElementsByClassName("ttl");
     console.log(ttl[1].innerText);
+
+    let NewPrice = document.getElementsByClassName("new_price");
+    console.log(`Цена ${NewPrice[0].innerHTML}`);
+
+    let Description = document.getElementsByClassName("description");
+    console.log(`Описание: ${Description[0].innerHTML}` );
+
+   let ItemImg = document.getElementsByClassName("item_image");
+   console.log(ItemImg[0]);
