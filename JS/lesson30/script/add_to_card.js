@@ -185,26 +185,27 @@
 
 // Сделать функцию которая вычисляет длину окружности, радиус задает пользователь.
 
-function circle(radius){
-    let p = 3.14;
-    let circle;
-    circle = 2 * p * radius;
-    alert(circle);
-}
+// function circle(radius){
+//     let p = 3.14;
+//     let circle;
+//     circle = 2 * p * radius;
+//     alert(circle);
+// }
 
-circle(prompt('введите радиус' ));
+// circle(prompt('введите радиус' ));
 
 
-// Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b
+// // Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b
 
-function min(a, b){
-    if(a>b){
-        alert(b);
-    }else if (a<b){
-        alert(a);
-    }else{
-        alert("равны")
-    }
-}
+// function min(a, b){
+//     if(a>b){
+//         alert(b);
+//     }else if (a<b){
+//         alert(a);
+//     }else{
+//         alert("равны");
+//     }
+// }
 
-min(prompt('введите a' ), prompt('введите b' ));
+// min(prompt('введите a' ), prompt('введите b' ));
+
