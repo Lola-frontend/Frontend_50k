@@ -221,30 +221,46 @@
 
 // Сделайте функцию которая возводить в степень числа вводимые пользователем
 
-function degree(number, degree){
-    let result = number ** degree;
-    alert(result);
-}
+// function degree(number, degree){
+//     let result = number ** degree;
+//     alert(result);
+// }
 
-degree(prompt('Введите число'), prompt('Введите степень числа'));
+// degree(prompt('Введите число'), prompt('Введите степень числа'));
 
 
 // Сделайте функцию которая находит площадь круга, радиус вводить пользователь. 
 
-function circle(radius){
-    let p = 3.14;
-    let circle;
-    circle = 2 * p * radius;
-    alert(circle);
-}
+// function circle(radius){
+//     let p = 3.14;
+//     let circle;
+//     circle = 2 * p * radius;
+//     alert(circle);
+// }
 
-circle(prompt('введите радиус' ));
+// circle(prompt('введите радиус' ));
 
-//  Сделайте функцию которая находит площадь прямоугольника, длину и ширину вводить пользователь
+// function circle(radius){
+//     let p = 3.14;
+//     return 2 * p * radius;
+// }
 
-function rectangle(a, b){
-    let result = a * b;
-    alert(result);
-}
+// let result = circle(prompt('введите радиус' ));
+// alert(result);
 
-rectangle(prompt('Введите длину'), prompt('Введите ширину'));
+// //  Сделайте функцию которая находит площадь прямоугольника, длину и ширину вводить пользователь
+
+// function rectangle(a, b){
+//     let result = a * b;
+//     alert(result);
+// }
+
+// rectangle(prompt('Введите длину'), prompt('Введите ширину'));
+
+
+// function rectangle(a, b){
+//     return a * b;
+// }
+
+// let result = rectangle(prompt('Введите длину'), prompt('Введите ширину'));
+// alert(result);
