@@ -38,3 +38,6 @@ if (login == "login" && password=="password"){
 } else if (password != 'password'){
     console.log('Пароль не правильный');
 } 
+
+
+CheckLogin(prompt('Введите логин'), prompt('Введите логин') );
