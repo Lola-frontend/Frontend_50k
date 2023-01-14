@@ -1,43 +1,43 @@
 "use strict";
 
 // 2) По клику на кнопку добавить в корзину товар с след параметрами:
-    // 1) Картинка
-    // 2) Заголовок
-    // 3) Доп параметры - цвет
-    // 4) Цена
+// 1) Картинка
+// 2) Заголовок
+// 3) Доп параметры - цвет
+// 4) Цена
 // 3) Добавить в корзину
 
 // Конкретные задачи:
-    // 1) Получить картинку
-    // 2) Получить заголовок
-        // Решение:
-            // let ttl = document.getElementsByClassName("ttl");
-            // ttl[1].innerText
+// 1) Получить картинку
+// 2) Получить заголовок
+// Решение:
+// let ttl = document.getElementsByClassName("ttl");
+// ttl[1].innerText
 
-    // 3) Получить доп параметры - цвет
-    // 4) Получить цену
+// 3) Получить доп параметры - цвет
+// 4) Получить цену
 
-    // Принцип получения данных следующий:
-        // Получить данные можно с помощью:
-        // .class - document.getElementsByClassName(name)
-        // #id - document.getElementById(id)
-        // attribute - document.getElementById(id).attribute = new value
-        // tag - document.getElementsByTagName(name)
+// Принцип получения данных следующий:
+// Получить данные можно с помощью:
+// .class - document.getElementsByClassName(name)
+// #id - document.getElementById(id)
+// attribute - document.getElementById(id).attribute = new value
+// tag - document.getElementsByTagName(name)
 
-        // .class - document.getElementsByClassName - Внутри документа получить элементы по названию класса
-        //      document - вкладка 
-        //      (.) - связка
-        //      get - получить
-        //      Elements - Элементы (потому что классов бывает несколько)
-        //      By - по / от
-        //      ClassName - название класса
+// .class - document.getElementsByClassName - Внутри документа получить элементы по названию класса
+//      document - вкладка 
+//      (.) - связка
+//      get - получить
+//      Elements - Элементы (потому что классов бывает несколько)
+//      By - по / от
+//      ClassName - название класса
 
 
-    // let ttl = document.getElementsByClassName("ttl");
-    // ttl[1].innerText
+// let ttl = document.getElementsByClassName("ttl");
+// ttl[1].innerText
 
-        // Результат: ничего не вывелось
-    // Без команды вывода ничего не выведется!
+// Результат: ничего не вывелось
+// Без команды вывода ничего не выведется!
 
 //     let ttl = document.getElementsByClassName("ttl");
 //     console.log(ttl[1].innerText);
@@ -270,35 +270,35 @@
 // let text = "Привет! как у тебя дела";
 // console.log(text.indexOf("тебя"));
 
-    // let text = "Привет! как у тебя дела";
-    // console.log(text.slice(8, 11));
+// let text = "Привет! как у тебя дела";
+// console.log(text.slice(8, 11));
 
-    // let text = "Привет! как у тебя дела";
-    // console.log(text.replace("тебя", "меня"));
+// let text = "Привет! как у тебя дела";
+// console.log(text.replace("тебя", "меня"));
 
-    // let text = "Привет! как у тебя дела";
-    // console.log(text.toLowerCase());
+// let text = "Привет! как у тебя дела";
+// console.log(text.toLowerCase());
 
-    // let text = "            Привет! как у тебя дела";
-    // console.log(text.trim());
+// let text = "            Привет! как у тебя дела";
+// console.log(text.trim());
 
 // Методы и свойства чисел
 
-    // let number = 120;
-    // console.log(number.toString());
+// let number = 120;
+// console.log(number.toString());
 
-    // let x = 9.654;
-    // console.log(x.toExponential(2));
+// let x = 9.654;
+// console.log(x.toExponential(2));
 
-    // let x = 9.554;
-    // console.log(x.toFixed(0));
+// let x = 9.554;
+// console.log(x.toFixed(0));
 
-    // let x = "9";
-    // let a = 10;
-    // let result;
-    // result = +x + a;
+// let x = "9";
+// let a = 10;
+// let result;
+// result = +x + a;
 
-    // console.log(result);
+// console.log(result);
 
 //   console.log(parseInt(10.9));
 
@@ -315,54 +315,49 @@
 
 // Добавление товара в корзину
 
-// let class_name = document.getElementsByClassName("add_cart");
+let class_name = document.getElementsByClassName("add_cart");
 
 // console.log(class_name); 
 
-// let myFunction = function(evt) {
-//     evt.preventDefault(); 
+let myFunction = function (evt) {
+    evt.preventDefault();
 
-//     let title = this.parentNode.parentNode.parentNode.querySelectorAll(".item__title a");
-//     let price = this.parentNode.parentNode.parentNode.querySelectorAll(".price span");
-//     let image = this.parentNode.parentNode.parentNode.querySelectorAll(".item__img img");
+    let title = this.parentNode.parentNode.parentNode.querySelectorAll(".item__title a");
+    let price = this.parentNode.parentNode.parentNode.querySelectorAll(".price span");
+    let image = this.parentNode.parentNode.parentNode.querySelectorAll(".item__img img");
 
-//     console.log(price[0].innerText);
-//     console.log(title[0].innerText);
-//     console.log(image[0]);
+    console.log(price[0].innerText);
+    console.log(title[0].innerText);
+    console.log(image[0]);
 
-//     let creat_li = document.createElement('li');
-//     creat_li.innerHTML = '<div class="bag__img">\
-//                                     <a href="?search=#">\
-//                                         <img src="'+image[0].src+'" alt="">\
-//                                     </a>\
-//                                 </div>\
-//                                 <div class="bag__info">\
-//                                     <p class="info__title"><a href="?search=#">'+title[0].innerText+'</a></p>\
-//                                     <div class="info__price">\
-//                                         <span>'+price[0].innerText+'</span>\
-//                                     </div>\
-//                                     <div class="trash">\
-//                                         <a href="?search=#"><i class="far fa-trash-alt"></i></a>\
-//                                     </div>\
-//                                 </div>';
+    let creat_li = document.createElement('li');
+    creat_li.innerHTML = '<div class="bag__img">\
+                                    <a href="?search=#">\
+                                        <img src="' + image[0].src + '" alt="">\
+                                    </a>\
+                                </div>\
+                                <div class="bag__info">\
+                                    <p class="info__title"><a href="?search=#">' + title[0].innerText + '</a></p>\
+                                    <div class="info__price">\
+                                        <span>' + price[0].innerText + '</span>\
+                                    </div>\
+                                    <div class="trash">\
+                                        <a href="?search=#"><i class="far fa-trash-alt"></i></a>\
+                                    </div>\
+                                </div>';
 
-//     let block_cart = document.querySelector('.bag.shopcard__dropdown ul');
-//     block_cart.appendChild(creat_li);
-    
-//     alert("Товар успешно добавлен в корзину!");
+    let block_cart = document.querySelector('.bag.shopcard__dropdown ul');
+    block_cart.appendChild(creat_li);
 
-// };
+    alert("Товар успешно добавлен в корзину!");
 
-
-// for (var i=0; i < class_name.length; i++) {
-//     class_name[i].addEventListener('click', myFunction, false);
-//     // addEventListener - добавляем событие клика
-//     // 'click' - тип события
-//     // myFunction - что должно выполнятся
-//     // false - обработчик
-// }
+};
 
 
-
-
-
+for (var i = 0; i < class_name.length; i++) {
+    class_name[i].addEventListener('click', myFunction, false);
+    // addEventListener - добавляем событие клика
+    // 'click' - тип события
+    // myFunction - что должно выполнятся
+    // false - обработчик
+}
