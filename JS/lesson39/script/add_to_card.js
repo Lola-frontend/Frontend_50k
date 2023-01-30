@@ -374,7 +374,6 @@ function delete_product() {
     for (var i = 0; i < click_trash.length; i++) {
         click_trash[i].addEventListener('click', del_func, false);
 
-
     }
 
     function del_func(evt) {
