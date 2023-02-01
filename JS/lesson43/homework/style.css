@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav{
+    width: 500px;
+    margin:auto;
+    padding-top: 10%;
+
+}
+
+.nav-item{
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+     
+}
+
+.nav-link{
+    color:black;
+    font-weight: 500;
+    font-size: 25px;
+}
